@@ -1,0 +1,726 @@
+{
+  "common": {
+    "Header": {
+      "logo": "/logo/logo.webp",
+      "logo_text": "CareViora",
+      "logo_subtext": "Together for a Better Tomorrow",
+      "links": [
+        {
+          "name": "Home",
+          "href": "#home"
+        },
+        {
+          "name": "Focus Areas",
+          "href": "#focus-areas"
+        },
+        {
+          "name": "About Us",
+          "href": "#about"
+        },
+        {
+          "name": "Impact",
+          "href": "#counters"
+        },
+        {
+          "name": "Why Support",
+          "href": "#why-support"
+        },
+        {
+          "name": "Our Work",
+          "href": "#work"
+        },
+        {
+          "name": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "name": "Support Us",
+          "href": "#cta"
+        },
+        {
+          "name": "Testimonials",
+          "href": "#testimonials"
+        },
+        {
+          "name": "Volunteers",
+          "href": "#volunteers"
+        },
+        {
+          "name": "Contact Us",
+          "href": "#contact"
+        }
+      ],
+      "menu_aria_label": "Open navigation menu",
+      "close_aria_label": "Close navigation menu"
+    },
+    "Footer": {
+      "logo": "/logo/logo-white.webp",
+      "logo_text": "CareViora",
+      "logo_subtext": "Together for a Better Tomorrow",
+      "tagline": "A non-profit organization dedicated to education, healthcare, livelihood, and community development, working towards a more inclusive and brighter society.",
+      "social_links": [
+        {
+          "platform": "facebook",
+          "href": "#home"
+        },
+        {
+          "platform": "instagram",
+          "href": "#home"
+        },
+        {
+          "platform": "linkedin",
+          "href": "#home"
+        },
+        {
+          "platform": "youtube",
+          "href": "#home"
+        }
+      ],
+      "quick_links_title": "Quick Links",
+      "quick_links": [
+        {
+          "name": "Home",
+          "href": "#home"
+        },
+        {
+          "name": "About Us",
+          "href": "#about"
+        },
+        {
+          "name": "Our Causes",
+          "href": "#work"
+        },
+        {
+          "name": "Our Events",
+          "href": "#gallery"
+        },
+        {
+          "name": "Our Volunteers",
+          "href": "#volunteers"
+        },
+        {
+          "name": "Contact Us",
+          "href": "#contact"
+        }
+      ],
+      "programs_title": "Our Programs",
+      "programs": [
+        {
+          "id": "fp-1",
+          "title": "Education Support",
+          "icon": "GraduationCap",
+          "href": "#contact"
+        },
+        {
+          "id": "fp-2",
+          "title": "Healthcare Services",
+          "icon": "HeartHandshake",
+          "href": "#contact"
+        },
+        {
+          "id": "fp-3",
+          "title": "Skill Development",
+          "icon": "Users",
+          "href": "#contact"
+        },
+        {
+          "id": "fp-4",
+          "title": "Livelihood Support",
+          "icon": "Sprout",
+          "href": "#contact"
+        },
+        {
+          "id": "fp-5",
+          "title": "Community Welfare",
+          "icon": "Users",
+          "href": "#contact"
+        }
+      ],
+      "contact_title": "Get In Touch",
+      "contact_items": [
+        {
+          "id": "fc-1",
+          "title": "Address",
+          "icon": "MapPin",
+          "lines": [
+            "123 Education Lane,",
+            "New York, NY 10001"
+          ]
+        },
+        {
+          "id": "fc-2",
+          "title": "Phone",
+          "icon": "Phone",
+          "lines": [
+            "+100000000000"
+          ],
+          "href": "tel:+100000000000"
+        },
+        {
+          "id": "fc-3",
+          "title": "Email",
+          "icon": "Mail",
+          "lines": [
+            "info@xyz.com"
+          ],
+          "href": "mailto:info@xyz.com"
+        }
+      ],
+      "copyright_prefix": "Copyright © 2026. All rights reserved. Powered by",
+      "copyright_brand": "Lestow",
+      "copyright_suffix": "",
+      "copyright_text": "Copyright © 2026. All rights reserved. Powered by Lestow"
+    },
+    "BackToTop": {
+      "aria_label": "Scroll back to top of page"
+    }
+  },
+  "categories": {
+    "NonProfitCharity": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "Home",
+              "pageName": "home",
+              "metadata": {
+                "title": "CareViora - Non-Profit Organization | Create a Brighter Tomorrow for All",
+                "description": "CareViora is a non-profit organization working for education, healthcare, the overall well-being of underprivileged communities."
+              },
+              "components": [
+                {
+                  "key": "Hero",
+                  "component": "Hero"
+                },
+                {
+                  "key": "FocusAreas",
+                  "component": "FocusAreas"
+                },
+                {
+                  "key": "About",
+                  "component": "About"
+                },
+                {
+                  "key": "Counters",
+                  "component": "Counters"
+                },
+                {
+                  "key": "WhySupport",
+                  "component": "WhySupport"
+                },
+                {
+                  "key": "OurWork",
+                  "component": "OurWork"
+                },
+                {
+                  "key": "Gallery",
+                  "component": "Gallery"
+                },
+                {
+                  "key": "Cta",
+                  "component": "Cta"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "Testimonials"
+                },
+                {
+                  "key": "Volunteers",
+                  "component": "Volunteers"
+                },
+                {
+                  "key": "Contact",
+                  "component": "Contact"
+                }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "eyebrow": "Join Us to",
+              "headline_first": "Create a Brighter",
+              "headline_second": "Tomorrow",
+              "headline_highlight": "for All",
+              "description": "CareViora is a non-profit organization working for education, health, and the overall well-being of underprivileged communities.",
+              "button_text": "Contact Us",
+              "button_href": "#contact",
+              "hero_image": "/images/hero/banner.webp",
+              "hero_image_alt": "CareViora - Joyful Indian rural girl leaning against tree"
+            },
+            "focus_areas": {
+              "badge": "WHAT WE DO",
+              "heading_prefix": "Our Key",
+              "heading_highlight": "Focus Areas",
+              "items": [
+                {
+                  "id": "fa-1",
+                  "icon": "GraduationCap",
+                  "icon_color": "#0D5C32",
+                  "icon_bg": "#E8F5E9",
+                  "title": "Education",
+                  "description": "Providing quality schooling, books, and scholarship support to children.",
+                  "href": "#contact"
+                },
+                {
+                  "id": "fa-2",
+                  "icon": "HeartHandshake",
+                  "icon_color": "#E86314",
+                  "icon_bg": "#FFF3E0",
+                  "title": "Healthcare",
+                  "description": "Regular medical camps, essential medicines, and maternal healthcare.",
+                  "href": "#contact"
+                },
+                {
+                  "id": "fa-3",
+                  "icon": "Users",
+                  "icon_color": "#0D5C32",
+                  "icon_bg": "#E8F5E9",
+                  "title": "Community Development",
+                  "description": "Empowering women with vocational skills and sustainable livelihoods.",
+                  "href": "#contact"
+                },
+                {
+                  "id": "fa-4",
+                  "icon": "Sprout",
+                  "icon_color": "#E86314",
+                  "icon_bg": "#FFF3E0",
+                  "title": "Environment",
+                  "description": "Community tree plantation drives and safe clean drinking water access.",
+                  "href": "#contact"
+                }
+              ]
+            },
+            "about": {
+              "badge": "About Our NGO",
+              "heading_line1": "Working Together for a",
+              "heading_line2_prefix": "More",
+              "heading_highlight": "Caring Society",
+              "heading_prefix": "Working Together for a",
+              "description": "CareViora is a non-profit organization dedicated to creating equal opportunities and a better quality of life for underprivileged communities through education, healthcare, and social support.",
+              "mission_title": "Our Mission",
+              "mission_desc": "To uplift lives, empower individuals, and build stronger, healthier, and more inclusive communities.",
+              "badge_years": "10+",
+              "badge_text_line1": "Years of",
+              "badge_text_line2": "Social Service",
+              "badge_text": "Years of Social Service",
+              "image_children_1": "/images/about/about-circle-1.webp",
+              "image_children_1_alt": "CareViora - Rural school girl smiling in schoolyard",
+              "image_children_2": "/images/about/about-circle-2.webp",
+              "image_children_2_alt": "CareViora - Indian school children in uniform smiling",
+              "image_children": "/images/about/about-children.webp",
+              "image_children_alt": "CareViora - 10+ Years of Social Service with children",
+              "image_teacher": "/images/about/about-teacher.webp",
+              "image_teacher_alt": "CareViora teacher mentoring school student"
+            },
+            "counters": {
+              "title_prefix": "Our Impact",
+              "title_highlight": "in Numbers",
+              "items": [
+                {
+                  "id": "cnt-1",
+                  "icon": "Users",
+                  "icon_color": "#0D5C32",
+                  "value": "5,000+",
+                  "label": "Lives Impacted"
+                },
+                {
+                  "id": "cnt-2",
+                  "icon": "GraduationCap",
+                  "icon_color": "#0D5C32",
+                  "value": "1,200+",
+                  "label": "Children Educated"
+                },
+                {
+                  "id": "cnt-3",
+                  "icon": "HeartPulse",
+                  "icon_color": "#E86314",
+                  "value": "800+",
+                  "label": "Health Checkups"
+                },
+                {
+                  "id": "cnt-4",
+                  "icon": "Sprout",
+                  "icon_color": "#0D5C32",
+                  "value": "50+",
+                  "label": "Community Projects"
+                }
+              ]
+            },
+            "why_support": {
+              "badge": "WHY US",
+              "heading_prefix": "Why",
+              "heading_highlight": "Support Us?",
+              "subtitle": "Your support helps us create lasting change in the lives of underprivileged communities.",
+              "image": "/images/why-support/why-support-kids.webp",
+              "image_alt": "CareViora - Joyful smiling children",
+              "features": [
+                {
+                  "id": "feat-1",
+                  "icon": "HandHeart",
+                  "title": "Transparent & Trustworthy",
+                  "description": "We ensure complete transparency in the use of your contributions."
+                },
+                {
+                  "id": "feat-2",
+                  "icon": "Users",
+                  "title": "Real Social Impact",
+                  "description": "Your support directly changes lives and builds stronger communities."
+                },
+                {
+                  "id": "feat-3",
+                  "icon": "Sprout",
+                  "title": "Sustainable Initiatives",
+                  "description": "We focus on long-term solutions for education, health and livelihoods."
+                },
+                {
+                  "id": "feat-4",
+                  "icon": "Handshake",
+                  "title": "Community Driven",
+                  "description": "We work closely with local communities to create lasting and meaningful change."
+                }
+              ]
+            },
+            "our_work": {
+              "badge": "WHAT WE DO",
+              "heading_prefix": "Our",
+              "heading_highlight": "Work",
+              "subtitle": "Explore our key programs dedicated to uplifting communities and changing lives across India.",
+              "items": [
+                {
+                  "id": "work-1",
+                  "title": "Education Support",
+                  "description": "Providing schooling kits, digital labs, and teacher mentorship in rural schools.",
+                  "icon": "GraduationCap",
+                  "icon_bg": "#E8F5E9",
+                  "icon_color": "#0D5C32",
+                  "image": "/images/work/work-education.webp",
+                  "image_alt": "Primary students studying attentively with books in classroom",
+                  "href": "#contact"
+                },
+                {
+                  "id": "work-2",
+                  "title": "Healthcare Services",
+                  "description": "Free diagnostic checkups, doctor consultations, and pediatric medical camps.",
+                  "icon": "HeartHandshake",
+                  "icon_bg": "#FFF3E0",
+                  "icon_color": "#E86314",
+                  "image": "/images/work/work-healthcare.webp",
+                  "image_alt": "Compassionate doctor examining young girl in community medical camp",
+                  "href": "#contact"
+                },
+                {
+                  "id": "work-3",
+                  "title": "Food & Daily Care",
+                  "description": "Mid-day meal programs, nutritional supplements, and ration distribution for families.",
+                  "icon": "Apple",
+                  "icon_bg": "#E8F5E9",
+                  "icon_color": "#0D5C32",
+                  "image": "/images/work/work-nutrition.webp",
+                  "image_alt": "Cheerful smiling kids enjoying nutritious meals together",
+                  "href": "#contact"
+                },
+                {
+                  "id": "work-4",
+                  "title": "Environment & Water",
+                  "description": "Restoring village water ponds, planting native tree saplings, and eco-awareness.",
+                  "icon": "Sprout",
+                  "icon_bg": "#FFF3E0",
+                  "icon_color": "#E86314",
+                  "image": "/images/work/work-environment.webp",
+                  "image_alt": "Hands carefully planting young green tree sapling in soil",
+                  "href": "#contact"
+                }
+              ]
+            },
+            "gallery": {
+              "badge": "OUR GALLERY",
+              "heading_prefix": "Moments from Our",
+              "heading_highlight": "Initiatives",
+              "subtitle": "A glimpse of our on-ground activities and community programs in action.",
+              "close_aria_label": "Close preview modal",
+              "prev_aria_label": "Previous picture",
+              "next_aria_label": "Next picture",
+              "images": [
+                {
+                  "id": "gal-1",
+                  "src": "/images/gallery/gallery-1.webp",
+                  "alt": "Students engaged in active classroom learning and discussion",
+                  "category": "Education"
+                },
+                {
+                  "id": "gal-2",
+                  "src": "/images/gallery/gallery-2.webp",
+                  "alt": "Pediatric doctor examining a cheerful rural girl during health camp",
+                  "category": "Healthcare"
+                },
+                {
+                  "id": "gal-3",
+                  "src": "/images/gallery/gallery-3.webp",
+                  "alt": "Women learning sewing and tailoring at vocational skill center",
+                  "category": "Empowerment"
+                },
+                {
+                  "id": "gal-4",
+                  "src": "/images/gallery/gallery-4.webp",
+                  "alt": "Community green plantation drive with youth volunteers",
+                  "category": "Environment"
+                },
+                {
+                  "id": "gal-5",
+                  "src": "/images/gallery/gallery-5.webp",
+                  "alt": "One-on-one literacy mentorship between teacher and student",
+                  "category": "Mentorship"
+                },
+                {
+                  "id": "gal-6",
+                  "src": "/images/gallery/gallery-6.webp",
+                  "alt": "Children celebrating sports and activity day with raised hands",
+                  "category": "Joy"
+                },
+                {
+                  "id": "gal-7",
+                  "src": "/images/gallery/gallery-7.webp",
+                  "alt": "Three young village siblings hugging happily outdoors",
+                  "category": "Hope"
+                },
+                {
+                  "id": "gal-8",
+                  "src": "/images/gallery/gallery-8.webp",
+                  "alt": "Young girls smiling together in their village pathway",
+                  "category": "Community"
+                }
+              ]
+            },
+            "cta": {
+              "badge": "Support Our Mission",
+              "headline_first": "Help Us Create a",
+              "headline_second": "Better Tomorrow",
+              "headline_third": "for",
+              "headline_highlight": "Underprivileged Lives",
+              "description": "Your small contribution can provide education, healthcare, and a brighter future for those in need.",
+              "image": "/images/cta/cta-siblings.webp",
+              "image_alt": "CareViora - Joyful Indian children smiling together",
+              "features": [
+                {
+                  "title": "Education",
+                  "icon": "GraduationCap"
+                },
+                {
+                  "title": "Healthcare",
+                  "icon": "HeartPulse"
+                },
+                {
+                  "title": "Community Support",
+                  "icon": "Users"
+                }
+              ]
+            },
+            "testimonials": {
+              "badge": "Testimonials",
+              "heading_prefix": "What Our",
+              "heading_highlight": "Supporters Say",
+              "subtitle": "Hear from our volunteers, donors, and community members about the impact of our work and the change we are creating together.",
+              "items": [
+                {
+                  "id": "test-1",
+                  "author_name": "Priya Sharma",
+                  "role": "Volunteer",
+                  "rating": 5,
+                  "quote": "I'm truly inspired by the work this organization is doing. Their education and healthcare programs are creating real opportunities for underprivileged communities. It feels great to be a part of such a meaningful mission.",
+                  "avatar": "/images/testimonials/priya-sharma.webp",
+                  "avatar_alt": "Priya Sharma - Volunteer"
+                },
+                {
+                  "id": "test-2",
+                  "author_name": "Rajesh Kumar",
+                  "role": "Community Supporter",
+                  "rating": 5,
+                  "quote": "Seeing the direct impact of our contributions on ground gave our whole organization immense faith in CareViora. Transparent, dedicated, and deeply committed to genuine societal change.",
+                  "avatar": "/images/volunteers/rahul-verma.webp",
+                  "avatar_alt": "Rajesh Kumar - Community Supporter"
+                },
+                {
+                  "id": "test-3",
+                  "author_name": "Sneha Patel",
+                  "role": "Education Mentor",
+                  "rating": 5,
+                  "quote": "Teaching and guiding young children in these community centers has been the most fulfilling experience of my life. CareViora creates an uplifting environment for both children and volunteers.",
+                  "avatar": "/images/volunteers/sneha-patel.webp",
+                  "avatar_alt": "Sneha Patel - Education Mentor"
+                }
+              ]
+            },
+            "volunteers": {
+              "badge": "Our Volunteers",
+              "heading_prefix": "Meet Our Dedicated",
+              "heading_highlight": "Volunteers",
+              "subtitle": "Meet the passionate individuals who selflessly give their time and skills to support our mission and create a positive impact in communities.",
+              "items": [
+                {
+                  "id": "vol-1",
+                  "name": "Rahul Verma",
+                  "role": "Community Volunteer",
+                  "image": "/images/volunteers/rahul-verma.webp",
+                  "image_alt": "Rahul Verma - Community Volunteer",
+                  "socials": [
+                    {
+                      "platform": "facebook",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "instagram",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "youtube",
+                      "href": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "vol-2",
+                  "name": "Priya Singh",
+                  "role": "Education Volunteer",
+                  "image": "/images/volunteers/priya-singh.webp",
+                  "image_alt": "Priya Singh - Education Volunteer",
+                  "socials": [
+                    {
+                      "platform": "facebook",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "instagram",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "youtube",
+                      "href": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "vol-3",
+                  "name": "Amit Sharma",
+                  "role": "Healthcare Volunteer",
+                  "image": "/images/volunteers/amit-sharma.webp",
+                  "image_alt": "Amit Sharma - Healthcare Volunteer",
+                  "socials": [
+                    {
+                      "platform": "facebook",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "instagram",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "youtube",
+                      "href": "#"
+                    }
+                  ]
+                },
+                {
+                  "id": "vol-4",
+                  "name": "Sneha Patel",
+                  "role": "Event Volunteer",
+                  "image": "/images/volunteers/sneha-patel.webp",
+                  "image_alt": "Sneha Patel - Event Volunteer",
+                  "socials": [
+                    {
+                      "platform": "facebook",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "instagram",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "linkedin",
+                      "href": "#"
+                    },
+                    {
+                      "platform": "youtube",
+                      "href": "#"
+                    }
+                  ]
+                }
+              ]
+            },
+            "contact": {
+              "badge": "Contact With Us",
+              "heading_prefix": "Get in Touch With Us",
+              "heading_highlight": "& Stay Updated",
+              "subtitle_line1": "Have a question, want to collaborate, or wish to support our cause?",
+              "subtitle_line2": "We'd love to hear from you.",
+              "subtitle": "Have a question, want to collaborate, or wish to support our cause? We'd love to hear from you.",
+              "image": "/images/contact/contact-kids.webp",
+              "image_alt": "CareViora - Joyful Indian children smiling together",
+              "cards": [
+                {
+                  "id": "c-1",
+                  "icon": "MapPin",
+                  "icon_bg": "#0D5C32",
+                  "icon_color": "#FFFFFF",
+                  "title": "Our Address",
+                  "lines": [
+                    "123 Education Lane,",
+                    "New York, NY 10001"
+                  ],
+                  "line1": "123 Education Lane,",
+                  "line2": "New York, NY 10001"
+                },
+                {
+                  "id": "c-2",
+                  "icon": "Mail",
+                  "icon_bg": "#E86314",
+                  "icon_color": "#FFFFFF",
+                  "title": "Email Us",
+                  "lines": [
+                    "info@xyz.com"
+                  ],
+                  "line1": "info@xyz.com",
+                  "line2": ""
+                },
+                {
+                  "id": "c-3",
+                  "icon": "Phone",
+                  "icon_bg": "#0D5C32",
+                  "icon_color": "#FFFFFF",
+                  "title": "Call Us",
+                  "lines": [
+                    "+100000000000"
+                  ],
+                  "line1": "+100000000000",
+                  "line2": ""
+                }
+              ],
+              "form": {
+                "card_title": "Leave Us a Message",
+                "name_placeholder": "Your Full Name*",
+                "email_placeholder": "Your Email Address*",
+                "phone_placeholder": "Your Phone Number*",
+                "subject_placeholder": "Subject*",
+                "message_placeholder": "Your Message*",
+                "submit_button": "Send Message",
+                "submitting_text": "Sending...",
+                "success_message": "Thank you! Your message has been sent successfully."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
