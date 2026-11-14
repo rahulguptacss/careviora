@@ -53,8 +53,7 @@ export default function Counters({ data }: { data: CountersSectionData }) {
           <div className="w-full flex-1 grid grid-cols-2 md:grid-cols-4 items-center gap-y-8 md:gap-y-0">
             {data.items.map((item, idx) => {
               const IconComp = iconMap[item.icon] || Users;
-              const iconColor =
-                item.icon_color || (idx === 2 ? '#E86314' : '#0D5C32');
+              const iconColor = item.icon_color;
               const isLast = idx === data.items.length - 1;
 
               return (

@@ -288,7 +288,8 @@
                   "description": "Community tree plantation drives and safe clean drinking water access.",
                   "href": "#contact"
                 }
-              ]
+              ],
+              "learn_more_text": "Learn more"
             },
             "about": {
               "badge": "About Our NGO",
@@ -395,7 +396,8 @@
                   "icon_color": "#0D5C32",
                   "image": "/images/work/work-education.webp",
                   "image_alt": "Primary students studying attentively with books in classroom",
-                  "href": "#contact"
+                  "href": "#contact",
+                  "link_text": "Support Program"
                 },
                 {
                   "id": "work-2",
@@ -406,7 +408,8 @@
                   "icon_color": "#E86314",
                   "image": "/images/work/work-healthcare.webp",
                   "image_alt": "Compassionate doctor examining young girl in community medical camp",
-                  "href": "#contact"
+                  "href": "#contact",
+                  "link_text": "Support Program"
                 },
                 {
                   "id": "work-3",
@@ -417,7 +420,8 @@
                   "icon_color": "#0D5C32",
                   "image": "/images/work/work-nutrition.webp",
                   "image_alt": "Cheerful smiling kids enjoying nutritious meals together",
-                  "href": "#contact"
+                  "href": "#contact",
+                  "link_text": "Support Program"
                 },
                 {
                   "id": "work-4",
@@ -428,9 +432,11 @@
                   "icon_color": "#E86314",
                   "image": "/images/work/work-environment.webp",
                   "image_alt": "Hands carefully planting young green tree sapling in soil",
-                  "href": "#contact"
+                  "href": "#contact",
+                  "link_text": "Support Program"
                 }
-              ]
+              ],
+              "link_text": "Support Program"
             },
             "gallery": {
               "badge": "OUR GALLERY",

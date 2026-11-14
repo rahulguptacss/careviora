@@ -66,7 +66,7 @@ export default function Volunteers({ data }: { data: VolunteersSectionData }) {
               <div className="relative w-full aspect-[4/3.4] bg-gray-50 overflow-hidden">
                 <Image
                   src={vol.image}
-                  alt={vol.image_alt || vol.name}
+                  alt={vol.image_alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover object-center transform hover:scale-105 transition-transform duration-500"
@@ -87,36 +87,29 @@ export default function Volunteers({ data }: { data: VolunteersSectionData }) {
                 {/* Orange Divider Dash */}
                 <div className="w-10 h-0.5 bg-[#E86314] rounded-full mx-auto my-3.5" />
 
-                {/* 4 Circular Social Icons */}
+                {/* Dynamic Social Icons from data.json */}
                 <div className="flex items-center justify-center gap-2">
-                  <a
-                    href="#contact"
-                    aria-label={`Facebook ${vol.name}`}
-                    className="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#0D5C32] hover:bg-[#0D5C32] hover:text-white flex items-center justify-center transition-colors shadow-2xs"
-                  >
-                    <FacebookIcon className="w-3.5 h-3.5" />
-                  </a>
-                  <a
-                    href="#contact"
-                    aria-label={`Instagram ${vol.name}`}
-                    className="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#0D5C32] hover:bg-[#0D5C32] hover:text-white flex items-center justify-center transition-colors shadow-2xs"
-                  >
-                    <InstagramIcon className="w-3.5 h-3.5" />
-                  </a>
-                  <a
-                    href="#contact"
-                    aria-label={`LinkedIn ${vol.name}`}
-                    className="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#0D5C32] hover:bg-[#0D5C32] hover:text-white flex items-center justify-center transition-colors shadow-2xs"
-                  >
-                    <LinkedinIcon className="w-3.5 h-3.5" />
-                  </a>
-                  <a
-                    href="#contact"
-                    aria-label={`YouTube ${vol.name}`}
-                    className="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#0D5C32] hover:bg-[#0D5C32] hover:text-white flex items-center justify-center transition-colors shadow-2xs"
-                  >
-                    <YoutubeIcon className="w-3.5 h-3.5" />
-                  </a>
+                  {(vol.socials || []).map((s) => {
+                    const getIcon = () => {
+                      switch (s.platform.toLowerCase()) {
+                        case 'facebook': return <FacebookIcon className="w-3.5 h-3.5" />;
+                        case 'instagram': return <InstagramIcon className="w-3.5 h-3.5" />;
+                        case 'linkedin': return <LinkedinIcon className="w-3.5 h-3.5" />;
+                        case 'youtube': return <YoutubeIcon className="w-3.5 h-3.5" />;
+                        default: return null;
+                      }
+                    };
+                    return (
+                      <a
+                        key={s.platform}
+                        href={s.href}
+                        aria-label={`${s.platform} - ${vol.name}`}
+                        className="w-8 h-8 rounded-full bg-[#E8F5E9] text-[#0D5C32] hover:bg-[#0D5C32] hover:text-white flex items-center justify-center transition-colors shadow-2xs"
+                      >
+                        {getIcon()}
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </motion.div>

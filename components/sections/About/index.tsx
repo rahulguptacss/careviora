@@ -38,8 +38,8 @@ export default function About({ data }: { data: AboutSectionData }) {
               {/* Circle 1: Main Top Image (Girl in orange dupatta) */}
               <div className="absolute top-3 left-0 w-[68%] aspect-square rounded-full overflow-hidden border-4 sm:border-[6px] border-white shadow-xl z-10 group">
                 <Image
-                  src={data.image_children_1 || data.image_children || '/images/about/about-circle-1.webp'}
-                  alt={data.image_children_1_alt || 'CareViora student'}
+                  src={data.image_children_1}
+                  alt={data.image_children_1_alt}
                   fill
                   priority
                   sizes="(max-width: 768px) 300px, 340px"
@@ -63,8 +63,8 @@ export default function About({ data }: { data: AboutSectionData }) {
               {/* Circle 2: Secondary Bottom Image (School children in uniform) */}
               <div className="absolute bottom-3 right-0 w-[58%] aspect-square rounded-full overflow-hidden border-4 sm:border-[6px] border-white shadow-2xl z-20 group">
                 <Image
-                  src={data.image_children_2 || '/images/about/about-circle-2.webp'}
-                  alt={data.image_children_2_alt || 'CareViora school children'}
+                  src={data.image_children_2}
+                  alt={data.image_children_2_alt}
                   fill
                   sizes="(max-width: 768px) 260px, 300px"
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
@@ -77,10 +77,10 @@ export default function About({ data }: { data: AboutSectionData }) {
                   {data.badge_years}
                 </span>
                 <span className="text-xs sm:text-[13px] font-semibold leading-snug mt-1.5 opacity-95">
-                  {data.badge_text_line1 || (data.badge_text ? data.badge_text.split(' ')[0] + ' of' : 'Years of')}
+                  {data.badge_text_line1}
                 </span>
                 <span className="text-xs sm:text-[13px] font-semibold leading-snug opacity-95">
-                  {data.badge_text_line2 || (data.badge_text ? data.badge_text.replace(/^[^\s]+\s[^\s]+\s*/, '') : 'Social Service')}
+                  {data.badge_text_line2}
                 </span>
                 <div className="w-8 h-0.5 bg-white/70 rounded-full mx-auto mt-2.5" />
               </div>

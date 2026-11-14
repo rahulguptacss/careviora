@@ -180,7 +180,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
           >
             <div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                {data.form.card_title || 'Leave Us a Message'}
+                {data.form.card_title}
               </h3>
               <div className="w-14 h-1 bg-[#E86314] rounded-full mt-2.5 mb-7" />
 
@@ -188,8 +188,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                 <div className="bg-emerald-900/60 border border-emerald-500/50 rounded-2xl p-8 text-center my-6">
                   <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto mb-3" />
                   <p className="text-white font-semibold text-lg">
-                    {data.form.success_message ||
-                      'Thank you! Your message has been sent successfully.'}
+                    {data.form.success_message}
                   </p>
                 </div>
               ) : (
@@ -206,9 +205,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
-                        placeholder={
-                          data.form.name_placeholder || 'Your Full Name*'
-                        }
+                        placeholder={data.form.name_placeholder}
                         className="w-full bg-white text-gray-800 placeholder-gray-500 text-sm pl-11 pr-4 py-3.5 rounded-xl border border-white focus:outline-none focus:ring-2 focus:ring-[#E86314]"
                       />
                     </div>
@@ -222,9 +219,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
                         }
-                        placeholder={
-                          data.form.email_placeholder || 'Your Email Address*'
-                        }
+                        placeholder={data.form.email_placeholder}
                         className="w-full bg-white text-gray-800 placeholder-gray-500 text-sm pl-11 pr-4 py-3.5 rounded-xl border border-white focus:outline-none focus:ring-2 focus:ring-[#E86314]"
                       />
                     </div>
@@ -241,9 +236,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        placeholder={
-                          data.form.phone_placeholder || 'Your Phone Number*'
-                        }
+                        placeholder={data.form.phone_placeholder}
                         className="w-full bg-white text-gray-800 placeholder-gray-500 text-sm pl-11 pr-4 py-3.5 rounded-xl border border-white focus:outline-none focus:ring-2 focus:ring-[#E86314]"
                       />
                     </div>
@@ -257,7 +250,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                         onChange={(e) =>
                           setFormData({ ...formData, subject: e.target.value })
                         }
-                        placeholder={data.form.subject_placeholder || 'Subject*'}
+                        placeholder={data.form.subject_placeholder}
                         className="w-full bg-white text-gray-800 placeholder-gray-500 text-sm pl-11 pr-4 py-3.5 rounded-xl border border-white focus:outline-none focus:ring-2 focus:ring-[#E86314]"
                       />
                     </div>
@@ -274,9 +267,7 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      placeholder={
-                        data.form.message_placeholder || 'Your Message*'
-                      }
+                      placeholder={data.form.message_placeholder}
                       className="w-full bg-white text-gray-800 placeholder-gray-500 text-sm pl-11 pr-4 py-3.5 rounded-xl border border-white focus:outline-none focus:ring-2 focus:ring-[#E86314] resize-none"
                     />
                   </div>
@@ -290,8 +281,8 @@ export default function Contact({ data }: { data: ContactSectionData }) {
                     >
                       <span>
                         {isSubmitting
-                          ? data.form.submitting_text || 'Sending...'
-                          : data.form.submit_button || 'Send Message'}
+                          ? data.form.submitting_text
+                          : data.form.submit_button}
                       </span>
                       <ArrowRight className="w-4 h-4" />
                     </button>

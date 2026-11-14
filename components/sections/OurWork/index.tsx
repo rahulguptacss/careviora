@@ -84,7 +84,7 @@ export default function OurWork({ data }: { data: OurWorkSectionData }) {
                     {item.description}
                   </p>
                   <div className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-[#0D5C32] group-hover:text-[#E86314] transition-colors mt-auto">
-                    <span>Support Program</span>
+                    <span>{item.link_text || data.link_text}</span>
                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>

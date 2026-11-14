@@ -56,7 +56,7 @@ export default function Hero({ data }: { data: HeroSectionData }) {
           >
             {data.headline_first}{' '}
             <span className="block mt-1 sm:mt-1.5">
-              {data.headline_second || 'Tomorrow'}{' '}
+              {data.headline_second}{' '}
               <span className="text-[#E86314]">{data.headline_highlight}</span>
             </span>
           </motion.h1>

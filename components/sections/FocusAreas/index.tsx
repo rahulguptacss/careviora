@@ -77,7 +77,7 @@ export default function FocusAreas({ data }: { data: FocusAreasSectionData }) {
 
                 {/* Arrow hint */}
                 <div className="mt-auto inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-gray-400 group-hover:text-[#E86314] transition-colors">
-                  <span>Learn more</span>
+                  <span>{item.link_text || data.learn_more_text}</span>
                   <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                 </div>
               </motion.a>

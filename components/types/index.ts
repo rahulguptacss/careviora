@@ -45,12 +45,14 @@ export interface FocusAreaItem {
   title: string;
   description: string;
   href: string;
+  link_text?: string;
 }
 
 export interface FocusAreasSectionData {
   badge: string;
   heading_prefix: string;
   heading_highlight: string;
+  learn_more_text?: string;
   items: FocusAreaItem[];
 }
 
@@ -70,9 +72,9 @@ export interface AboutSectionData {
   image_children?: string;
   image_children_alt?: string;
   image_children_1: string;
-  image_children_1_alt?: string;
+  image_children_1_alt: string;
   image_children_2: string;
-  image_children_2_alt?: string;
+  image_children_2_alt: string;
   image_teacher: string;
   image_teacher_alt: string;
 }
@@ -118,6 +120,7 @@ export interface WorkProgramItem {
   image: string;
   image_alt: string;
   href: string;
+  link_text?: string;
 }
 
 export interface OurWorkSectionData {
@@ -125,6 +128,7 @@ export interface OurWorkSectionData {
   heading_prefix: string;
   heading_highlight: string;
   subtitle: string;
+  link_text?: string;
   items: WorkProgramItem[];
 }
 

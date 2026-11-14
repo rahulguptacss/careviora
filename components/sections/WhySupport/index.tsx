@@ -79,7 +79,7 @@ export default function WhySupport({ data }: { data: WhySupportSectionData }) {
               <div className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-lg border-4 border-white bg-gray-50">
                 <Image
                   src={data.image}
-                  alt={data.image_alt || 'Why support CareViora'}
+                  alt={data.image_alt}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 420px"

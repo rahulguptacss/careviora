@@ -35,8 +35,8 @@ export default function Cta({ data }: { data: CtaSectionData }) {
               className="lg:col-span-6 relative h-64 sm:h-80 lg:h-full min-h-[280px] lg:min-h-[440px] w-full overflow-hidden"
             >
               <Image
-                src={data.image || '/images/cta/cta-siblings.webp'}
-                alt={data.image_alt || 'CareViora - Joyful Indian children'}
+                src={data.image}
+                alt={data.image_alt}
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 600px"

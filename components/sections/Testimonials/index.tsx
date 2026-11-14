@@ -58,13 +58,13 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
           {/* Eyebrow Pill with Heart */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#EBF7F0] text-[#0D5C32] text-xs sm:text-sm font-semibold mb-4 shadow-xs">
             <Heart className="w-3.5 h-3.5 fill-[#0D5C32] text-[#0D5C32]" />
-            <span>{data.badge || 'Testimonials'}</span>
+            <span>{data.badge}</span>
           </div>
 
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-extrabold tracking-tight mb-3">
-            <span className="text-[#0D5C32]">{data.heading_prefix || 'What Our'}</span>{' '}
-            <span className="text-[#E86314]">{data.heading_highlight || 'Supporters Say'}</span>
+            <span className="text-[#0D5C32]">{data.heading_prefix}</span>{' '}
+            <span className="text-[#E86314]">{data.heading_highlight}</span>
           </h2>
 
           {/* Dual Color Underline Accent (Green + Orange) */}
@@ -127,7 +127,7 @@ export default function Testimonials({ data }: { data: TestimonialsSectionData }
                     <div className="relative z-10 w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-[3.5px] border-[#0D5C32] shadow-md bg-white">
                       <Image
                         src={item.avatar}
-                        alt={item.avatar_alt || item.author_name}
+                        alt={item.avatar_alt}
                         fill
                         sizes="(max-width: 640px) 150px, 180px"
                         priority

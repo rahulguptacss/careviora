@@ -3,7 +3,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    overflow-x: clip;
+    scroll-padding-top: 80px;
   }
   body {
     overflow-x: clip;
