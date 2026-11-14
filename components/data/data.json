@@ -10,16 +10,8 @@
           "href": "#home"
         },
         {
-          "name": "Focus Areas",
-          "href": "#focus-areas"
-        },
-        {
           "name": "About Us",
           "href": "#about"
-        },
-        {
-          "name": "Impact",
-          "href": "#counters"
         },
         {
           "name": "Why Support",
@@ -191,10 +183,6 @@
                 {
                   "key": "Hero",
                   "component": "Hero"
-                },
-                {
-                  "key": "FocusAreas",
-                  "component": "FocusAreas"
                 },
                 {
                   "key": "About",

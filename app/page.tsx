@@ -2,7 +2,6 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Header from '../components/sections/Header';
 import Hero from '../components/sections/Hero';
-import FocusAreas from '../components/sections/FocusAreas';
 import About from '../components/sections/About';
 import Counters from '../components/sections/Counters';
 import WhySupport from '../components/sections/WhySupport';
@@ -31,9 +30,6 @@ export const metadata: Metadata = {
 export default function Home() {
   const sectionMap: Record<string, React.ReactNode> = {
     Hero: sections.hero ? <Hero data={sections.hero} /> : null,
-    FocusAreas: sections.focus_areas ? (
-      <FocusAreas data={sections.focus_areas} />
-    ) : null,
     About: sections.about ? <About data={sections.about} /> : null,
     Counters: sections.counters ? <Counters data={sections.counters} /> : null,
     WhySupport: sections.why_support ? (

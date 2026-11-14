@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Users,
   GraduationCap,
@@ -10,7 +10,7 @@ import {
   ShieldCheck,
   type LucideIcon,
 } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import type { CountersSectionData } from '../../types';
 
 const iconMap: Record<string, LucideIcon> = {
@@ -21,6 +21,49 @@ const iconMap: Record<string, LucideIcon> = {
   HeartHandshake,
   ShieldCheck,
 };
+
+function AnimatedCounter({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+  const numericValue = parseInt(value.replace(/[^0-9]/g, ''), 10) || 0;
+  const suffix = value.replace(/[0-9,]/g, '');
+  const hasComma = value.includes(',');
+
+  const [displayValue, setDisplayValue] = useState(0);
+
+  useEffect(() => {
+    if (!isInView) return;
+    const duration = 1800; // 1.8 seconds smooth count-up
+    const startTime = performance.now();
+
+    const step = (currentTime: number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // easeOutExpo for smooth decelerating count-up
+      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+      const current = Math.round(easeProgress * numericValue);
+      setDisplayValue(current);
+
+      if (progress < 1) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
+  }, [isInView, numericValue]);
+
+  const formatted = hasComma
+    ? displayValue.toLocaleString('en-US')
+    : displayValue.toString();
+
+  return (
+    <span ref={ref}>
+      {formatted}
+      {suffix}
+    </span>
+  );
+}
 
 export default function Counters({ data }: { data: CountersSectionData }) {
   if (!data || !data.items) return null;
@@ -85,7 +128,7 @@ export default function Counters({ data }: { data: CountersSectionData }) {
                     transition={{ duration: 0.4, delay: idx * 0.1 + 0.1 }}
                     className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold text-[#0D5C32] tracking-tight leading-tight mt-1 mb-0.5"
                   >
-                    {item.value}
+                    <AnimatedCounter value={item.value} />
                   </motion.div>
 
                   {/* Label */}

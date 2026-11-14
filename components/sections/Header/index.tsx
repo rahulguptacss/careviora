@@ -20,9 +20,7 @@ export default function Header({ data }: { data: HeaderData }) {
 
       const pageSections = [
         { id: 'home', name: 'Home' },
-        { id: 'focus-areas', name: 'Focus Areas' },
         { id: 'about', name: 'About Us' },
-        { id: 'counters', name: 'Impact' },
         { id: 'why-support', name: 'Why Support' },
         { id: 'work', name: 'Our Work' },
         { id: 'gallery', name: 'Gallery' },
